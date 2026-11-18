@@ -63,7 +63,7 @@ The API health check is available at `http://localhost:5000/api/health`.
 ### Deploy to Render
 
 The repository includes `render.yaml`, which defines a Render static frontend,
-Flask API, and PostgreSQL database in Oregon, matching the API region so they can
+Flask API (`oceanfusion-api-singapore`), and PostgreSQL database in Singapore so they can
 communicate over Render's private network. The Flask runtime is pinned to
 Python 3.13.5 because the saved TensorFlow 2.20 forecast models do not support
 Python 3.14. The Blueprint uses Render's free API and database plans for a
@@ -77,7 +77,7 @@ temporary demo deployment.
 3. Set the Blueprint prompts to the deployed origins: `CORS_ORIGINS` should be
    the frontend URL (for example, `https://oceanfusion-web.onrender.com`) and
    `VITE_API_BASE_URL` should be the API URL ending in `/api` (for example,
-   `https://oceanfusion-api.onrender.com/api`). If Render assigns different
+   `https://oceanfusion-api-singapore.onrender.com/api`). If Render assigns different
    URLs, use those instead. The static site must be rebuilt after changing its
    API URL.
 4. After the database is ready, copy its **external** connection string from
