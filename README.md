@@ -63,9 +63,10 @@ The API health check is available at `http://localhost:5000/api/health`.
 ### Deploy to Render
 
 The repository includes `render.yaml`, which defines a Render static frontend,
-Flask API, and persistent PostgreSQL database in Singapore. The Flask runtime
-is pinned to Python 3.13.5 because the saved TensorFlow 2.20 forecast models
-do not support Python 3.14.
+Flask API, and PostgreSQL database in Singapore. The Flask runtime is pinned to
+Python 3.13.5 because the saved TensorFlow 2.20 forecast models do not support
+Python 3.14. The Blueprint uses Render's free API and database plans for a
+temporary demo deployment.
 
 1. Create a GitHub repository and push this project. The `.gitignore` excludes
    the local SQLite database and acquired NOAA files; do not force-add these
@@ -101,12 +102,13 @@ Forest model for the selected date, so the ignored 537 MB local score CSV does
 not need to be uploaded. Model artifacts under `ml/saved_models` and evaluation
 reports under `ml/evaluation` are included with the source deployment.
 
-The Blueprint uses a 1 CPU / 2 GB API service and a 0.5 CPU / 1 GB PostgreSQL
-service with 5 GB storage. At the current Render list prices, that is about
-$45.20/month before usage above included bandwidth and any price changes; the
-static frontend has no compute charge. Review [Render pricing](https://render.com/pricing)
-before creating the paid resources. Render's [Blueprint documentation](https://render.com/docs/blueprint-spec)
-describes the service definitions in `render.yaml`.
+Render's free API service sleeps after 15 minutes without traffic and can take
+about a minute to wake. Its local files are temporary. The free PostgreSQL
+database has a 1 GB limit and expires 30 days after creation; the existing
+885 MB SQLite database may expand when converted to PostgreSQL. The migration
+script stops safely on an error and verifies copied row counts. This setup is
+for a temporary demo, not durable hosting. See Render's [free service limits](https://render.com/docs/free)
+and [Blueprint documentation](https://render.com/docs/blueprint-spec).
 
 Build the frontend with the public API URL supplied at build time:
 
