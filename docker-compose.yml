@@ -4,7 +4,7 @@ services:
     environment:
       POSTGRES_DB: oceanfusion
       POSTGRES_USER: oceanfusion
-      POSTGRES_PASSWORD: oceanfusion
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-oceanfusion}
     ports:
       - "5433:5432"
     volumes:
