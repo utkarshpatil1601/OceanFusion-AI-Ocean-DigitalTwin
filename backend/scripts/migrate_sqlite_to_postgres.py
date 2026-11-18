@@ -35,20 +35,13 @@ def main() -> int:
 
     with app.app_context():
         tables = db.metadata.sorted_tables
-        with db.engine.connect() as destination:
-            occupied = [
-                table.name
-                for table in tables
-                if destination.execute(
-                    select(func.count()).select_from(table)
-                ).scalar_one()
-            ]
-        if occupied:
-            raise SystemExit(
-                "Destination database is not empty; no data was changed. "
-                "Tables with records: " + ", ".join(occupied)
+        with db.engine.begin() as destination:
+            destination.execute(
+                text(
+                    "ALTER TABLE fisheries_landings "
+                    "ALTER COLUMN precision TYPE TEXT"
+                )
             )
-
         source_table_names = set(inspect(source_engine).get_table_names())
         with source_engine.connect() as source:
             missing = [
@@ -62,6 +55,31 @@ def main() -> int:
                 )
 
             for table in tables:
+                source_count = None
+                with source_engine.connect() as source_count_connection:
+                    source_count = source_count_connection.execute(
+                        select(func.count()).select_from(table)
+                    ).scalar_one()
+
+                with db.engine.connect() as destination_count_connection:
+                    destination_count = destination_count_connection.execute(
+                        select(func.count()).select_from(table)
+                    ).scalar_one()
+
+                if destination_count:
+                    if destination_count == source_count:
+                        print(
+                            f"{table.name}: already present and verified "
+                            f"({destination_count:,} rows); skipping",
+                            flush=True,
+                        )
+                        continue
+                    raise SystemExit(
+                        f"Destination table {table.name} already contains "
+                        f"{destination_count:,} rows, while the source has "
+                        f"{source_count:,}. No rows were added to this table."
+                    )
+
                 copied = 0
                 with source_engine.connect() as source_connection, db.engine.begin() as destination:
                     result = source_connection.execution_options(stream_results=True).execute(
@@ -96,10 +114,11 @@ def main() -> int:
                     destination_count = destination.execute(
                         select(func.count()).select_from(table)
                     ).scalar_one()
-                if destination_count != copied:
+                if destination_count != copied or copied != source_count:
                     raise RuntimeError(
                         f"Row count verification failed for {table.name}: "
-                        f"copied {copied}, found {destination_count}"
+                        f"source {source_count}, copied {copied}, "
+                        f"found {destination_count}"
                     )
 
     source_engine.dispose()

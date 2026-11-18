@@ -87,7 +87,8 @@ class FisheriesLanding(db.Model):
     state = db.Column(db.String(100))
     resource = db.Column(db.String(255))
     landings_tonnes = db.Column(db.Float, nullable=False)
-    precision = db.Column(db.String(100))
+    # CMFRI provenance notes can include long source workbook caveats.
+    precision = db.Column(db.Text)
     source_url = db.Column(db.String(500), nullable=False)
     source_record_id = db.Column(db.String(255), nullable=False, unique=True)
 
