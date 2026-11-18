@@ -1,0 +1,50 @@
+{
+  "input": "C:\\Users\\utkar\\ML_CP\\data\\processed\\noaa_anomaly_scores.csv",
+  "record_count": 4940098,
+  "anomaly_count": 49401,
+  "anomaly_rate": 0.01,
+  "coverage": {
+    "start": "2024-01-01",
+    "end": "2025-12-31",
+    "distinct_days": 731
+  },
+  "score_quantiles": {
+    "0.0": -0.113002,
+    "0.1": -0.06059,
+    "0.5": -0.022414,
+    "0.9": -0.003368,
+    "1.0": -2e-06
+  },
+  "flagged_sst_anomaly": {
+    "mean": -1.038011,
+    "min": -8.63,
+    "max": 5.13
+  },
+  "top_flagged_days": [
+    {
+      "date": "2025-07-30",
+      "count": 339
+    },
+    {
+      "date": "2025-08-01",
+      "count": 324
+    },
+    {
+      "date": "2025-07-31",
+      "count": 316
+    },
+    {
+      "date": "2025-08-02",
+      "count": 311
+    },
+    {
+      "date": "2025-08-03",
+      "count": 299
+    }
+  ],
+  "interpretation": [
+    "Isolation Forest flags observations relative to this acquired sample.",
+    "The score is not a probability and is not an environmental-impact label.",
+    "The acquired two-year window is not a multi-decadal climatology and does not prove physical events."
+  ]
+}

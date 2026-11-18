@@ -1,0 +1,15 @@
+Flask==3.1.0
+Flask-Cors==5.0.0
+Flask-SQLAlchemy==3.1.1
+psycopg[binary]==3.2.13
+python-dotenv==1.0.1
+pytest==8.3.4
+xarray==2025.10.1
+netCDF4==1.7.2
+openpyxl==3.1.5
+biopython==1.86
+pandas==3.1.1
+scikit-learn==1.7.2
+joblib==1.5.3
+waitress==3.0.2
+tensorflow==2.20.0; python_version >= "3.9" and python_version < "3.14"

@@ -1,0 +1,215 @@
+{
+  "model": "LSTM",
+  "task": "Location-aware NOAA SST forecasting",
+  "model_version": "noaa-sst-lstm-2024-2025-v1",
+  "window_days": 30,
+  "horizons": {
+    "1": {
+      "test_examples": 3520,
+      "lstm": {
+        "mae": 0.19701,
+        "rmse": 0.261673,
+        "r2": 0.947108
+      },
+      "persistence": {
+        "mae": 0.091528,
+        "rmse": 0.126563,
+        "r2": 0.987627
+      },
+      "lagged_random_forest": {
+        "mae": 0.085358,
+        "rmse": 0.117048,
+        "r2": 0.989417
+      }
+    },
+    "3": {
+      "test_examples": 3520,
+      "lstm": {
+        "mae": 0.268037,
+        "rmse": 0.347059,
+        "r2": 0.906958
+      },
+      "persistence": {
+        "mae": 0.212355,
+        "rmse": 0.293756,
+        "r2": 0.933342
+      },
+      "lagged_random_forest": {
+        "mae": 0.221948,
+        "rmse": 0.300796,
+        "r2": 0.930109
+      }
+    },
+    "7": {
+      "test_examples": 3520,
+      "lstm": {
+        "mae": 0.38397,
+        "rmse": 0.500477,
+        "r2": 0.806517
+      },
+      "persistence": {
+        "mae": 0.359108,
+        "rmse": 0.494307,
+        "r2": 0.811258
+      },
+      "lagged_random_forest": {
+        "mae": 0.397622,
+        "rmse": 0.528905,
+        "r2": 0.783912
+      }
+    }
+  },
+  "feature_columns": [
+    "sst",
+    "sst_anomaly",
+    "latitude",
+    "longitude",
+    "sin_day_of_year",
+    "cos_day_of_year"
+  ],
+  "cell_count": 32,
+  "coverage": {
+    "start": "2024-01-01",
+    "end": "2025-12-31",
+    "distinct_days": 731
+  },
+  "split_dates": {
+    "train_end_exclusive": "2025-05-26",
+    "validation_end_exclusive": "2025-09-13"
+  },
+  "cells": [
+    {
+      "latitude": 5.125,
+      "longitude": 50.125
+    },
+    {
+      "latitude": 5.375,
+      "longitude": 74.875
+    },
+    {
+      "latitude": 5.875,
+      "longitude": 71.625
+    },
+    {
+      "latitude": 6.375,
+      "longitude": 68.375
+    },
+    {
+      "latitude": 6.875,
+      "longitude": 65.125
+    },
+    {
+      "latitude": 7.375,
+      "longitude": 61.875
+    },
+    {
+      "latitude": 7.875,
+      "longitude": 58.625
+    },
+    {
+      "latitude": 8.375,
+      "longitude": 55.625
+    },
+    {
+      "latitude": 8.875,
+      "longitude": 55.125
+    },
+    {
+      "latitude": 9.375,
+      "longitude": 55.875
+    },
+    {
+      "latitude": 9.875,
+      "longitude": 57.375
+    },
+    {
+      "latitude": 10.375,
+      "longitude": 59.625
+    },
+    {
+      "latitude": 10.875,
+      "longitude": 62.375
+    },
+    {
+      "latitude": 11.375,
+      "longitude": 65.125
+    },
+    {
+      "latitude": 11.875,
+      "longitude": 67.625
+    },
+    {
+      "latitude": 12.375,
+      "longitude": 69.625
+    },
+    {
+      "latitude": 12.875,
+      "longitude": 72.125
+    },
+    {
+      "latitude": 13.625,
+      "longitude": 50.375
+    },
+    {
+      "latitude": 14.125,
+      "longitude": 53.625
+    },
+    {
+      "latitude": 14.625,
+      "longitude": 57.375
+    },
+    {
+      "latitude": 15.125,
+      "longitude": 62.375
+    },
+    {
+      "latitude": 15.625,
+      "longitude": 70.625
+    },
+    {
+      "latitude": 16.375,
+      "longitude": 59.125
+    },
+    {
+      "latitude": 16.875,
+      "longitude": 71.625
+    },
+    {
+      "latitude": 17.625,
+      "longitude": 70.375
+    },
+    {
+      "latitude": 18.375,
+      "longitude": 72.125
+    },
+    {
+      "latitude": 19.375,
+      "longitude": 62.125
+    },
+    {
+      "latitude": 20.125,
+      "longitude": 69.875
+    },
+    {
+      "latitude": 21.125,
+      "longitude": 65.625
+    },
+    {
+      "latitude": 22.375,
+      "longitude": 64.375
+    },
+    {
+      "latitude": 23.625,
+      "longitude": 64.625
+    },
+    {
+      "latitude": 24.625,
+      "longitude": 66.125
+    }
+  ],
+  "limitations": [
+    "Training uses a deterministic representative sample of NOAA grid cells, not every grid cell.",
+    "The forecast is observational and statistical; it is not a hydrodynamic simulation.",
+    "Predictions require a complete 30-day history at the selected nearest training grid cell."
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "model": "RandomForestRegressor",
+  "task": "CMFRI statewise landing regression",
+  "feature_columns": [
+    "year",
+    "state",
+    "previous_year_landings_tonnes"
+  ],
+  "training_years": [
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022
+  ],
+  "test_years": [
+    2023,
+    2024,
+    2025
+  ],
+  "train_rows": 45,
+  "test_rows": 15,
+  "model_metrics": {
+    "mae_tonnes": 73551.614,
+    "rmse_tonnes": 107463.829,
+    "r2": 0.824317
+  },
+  "persistence_baseline": {
+    "mae_tonnes": 86623.133,
+    "rmse_tonnes": 121128.479,
+    "r2": 0.776798
+  },
+  "metrics_by_state": {
+    "Goa": {
+      "mae_tonnes": 19640.829,
+      "rmse_tonnes": 21931.66,
+      "r2": -1.444372
+    },
+    "Gujarat": {
+      "mae_tonnes": 124309.017,
+      "rmse_tonnes": 174764.057,
+      "r2": -4.564727
+    },
+    "Karnataka": {
+      "mae_tonnes": 108489.949,
+      "rmse_tonnes": 126869.435,
+      "r2": -0.967896
+    },
+    "Kerala": {
+      "mae_tonnes": 17135.697,
+      "rmse_tonnes": 17576.818,
+      "r2": -2.452675
+    },
+    "Maharashtra": {
+      "mae_tonnes": 98182.578,
+      "rmse_tonnes": 101558.366,
+      "r2": -1.507146
+    }
+  },
+  "metrics_by_year": {
+    "2023": {
+      "mae_tonnes": 89231.683,
+      "rmse_tonnes": 139307.302,
+      "r2": 0.759382
+    },
+    "2024": {
+      "mae_tonnes": 84002.573,
+      "rmse_tonnes": 110439.007,
+      "r2": 0.80448
+    },
+    "2025": {
+      "mae_tonnes": 47420.586,
+      "rmse_tonnes": 55155.463,
+      "r2": 0.942748
+    }
+  },
+  "prediction_constraints": {
+    "lower_bound_tonnes": 0,
+    "applied": "negative predictions are clipped to zero before evaluation and serving"
+  },
+  "limitations": [
+    "Statewise records are a small experimental dataset.",
+    "Validation uses the final three years and does not establish production forecasting accuracy.",
+    "National resource-wise records are excluded because their historical coverage is partial."
+  ]
+}

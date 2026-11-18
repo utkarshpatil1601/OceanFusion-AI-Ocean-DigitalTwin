@@ -1,0 +1,7 @@
+dataset_key,name,provider,source_url,format,spatial_scope,temporal_scope,status,notes
+noaa_oisst_v2_1,Daily Optimum Interpolation Sea Surface Temperature v2.1,NOAA NCEI,https://www.ncei.noaa.gov/products/optimum-interpolation-sst,NetCDF,Arabian Sea study area,2015-2025,planned,Download daily files and aggregate during preprocessing.
+obis_occurrences,Marine occurrence records,OBIS,https://obis.org/,GeoParquet or TSV,Arabian Sea study area,2015-2025,planned,Filter to the canonical study polygon.
+cmfri_landings,Marine fisheries catch estimates,CMFRI,https://cmfri.org.in/fish-catch-estimates,CSV or XLSX,Western Indian coastal states,2015-2025,planned,Keep state and reporting period; do not infer GPS locations.
+worms_taxonomy,Marine taxonomy,WoRMS,https://www.marinespecies.org/rest/,JSON,Species referenced by imported records,as available,planned,Resolve accepted names and synonyms.
+ncbi_nucleotide,Marine fish nucleotide references,NCBI,https://eutils.ncbi.nlm.nih.gov/entrez/eutils/,FASTA and JSON,Relevant marine fish references,as available,planned,Start with public COI records.
+bold_barcodes,Marine barcode references,BOLD Systems,https://v4.boldsystems.org/,FASTA and TSV,Relevant marine fish references,as available,planned,Use only records with usable sequence metadata.

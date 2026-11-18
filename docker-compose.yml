@@ -1,0 +1,19 @@
+services:
+  db:
+    image: postgis/postgis:16-3.4
+    environment:
+      POSTGRES_DB: oceanfusion
+      POSTGRES_USER: oceanfusion
+      POSTGRES_PASSWORD: oceanfusion
+    ports:
+      - "5433:5432"
+    volumes:
+      - oceanfusion-db:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U oceanfusion -d oceanfusion"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+volumes:
+  oceanfusion-db:

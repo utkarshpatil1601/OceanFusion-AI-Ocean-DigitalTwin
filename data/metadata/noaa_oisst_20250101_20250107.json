@@ -1,0 +1,51 @@
+[
+  {
+    "date": "2025-01-01",
+    "url": "https://www.ncei.noaa.gov/data/sea-surface-temperature-optimum-interpolation/v2.1/access/avhrr/202501/oisst-avhrr-v02r01.20250101.nc",
+    "file": "data\\raw\\noaa\\oisst-avhrr-v02r01.20250101.nc",
+    "sha256": "aec833d9936474a54c55d4550be78ffacfdebc4de7552f7ff30ccf1d73bbde2e",
+    "status": "downloaded"
+  },
+  {
+    "date": "2025-01-02",
+    "url": "https://www.ncei.noaa.gov/data/sea-surface-temperature-optimum-interpolation/v2.1/access/avhrr/202501/oisst-avhrr-v02r01.20250102.nc",
+    "file": "data\\raw\\noaa\\oisst-avhrr-v02r01.20250102.nc",
+    "sha256": "14afea0dbea083c7614a9e91379a21780fbf04b4a1b6b5d84ba2d6d12ab3620c",
+    "status": "downloaded"
+  },
+  {
+    "date": "2025-01-03",
+    "url": "https://www.ncei.noaa.gov/data/sea-surface-temperature-optimum-interpolation/v2.1/access/avhrr/202501/oisst-avhrr-v02r01.20250103.nc",
+    "file": "data\\raw\\noaa\\oisst-avhrr-v02r01.20250103.nc",
+    "sha256": "e48580e654eedcfad5eb568da02e169784f574f096206312478ba9a7c875a6b7",
+    "status": "downloaded"
+  },
+  {
+    "date": "2025-01-04",
+    "url": "https://www.ncei.noaa.gov/data/sea-surface-temperature-optimum-interpolation/v2.1/access/avhrr/202501/oisst-avhrr-v02r01.20250104.nc",
+    "file": "data\\raw\\noaa\\oisst-avhrr-v02r01.20250104.nc",
+    "sha256": "112a68a5d8e1ca792202ccd3b5ca2e9456217270a1c3e771a703de2d75f05338",
+    "status": "downloaded"
+  },
+  {
+    "date": "2025-01-05",
+    "url": "https://www.ncei.noaa.gov/data/sea-surface-temperature-optimum-interpolation/v2.1/access/avhrr/202501/oisst-avhrr-v02r01.20250105.nc",
+    "file": "data\\raw\\noaa\\oisst-avhrr-v02r01.20250105.nc",
+    "sha256": "ab8ec8758565cba0ac0f2dbb90325a688f0dd2c651e5f917f5939fb39218ba9f",
+    "status": "downloaded"
+  },
+  {
+    "date": "2025-01-06",
+    "url": "https://www.ncei.noaa.gov/data/sea-surface-temperature-optimum-interpolation/v2.1/access/avhrr/202501/oisst-avhrr-v02r01.20250106.nc",
+    "file": "data\\raw\\noaa\\oisst-avhrr-v02r01.20250106.nc",
+    "sha256": "0a22d00667a2685fe3dc7d16ac69eaf5671723d8a335f8bebcba8aaa4412edaa",
+    "status": "downloaded"
+  },
+  {
+    "date": "2025-01-07",
+    "url": "https://www.ncei.noaa.gov/data/sea-surface-temperature-optimum-interpolation/v2.1/access/avhrr/202501/oisst-avhrr-v02r01.20250107.nc",
+    "file": "data\\raw\\noaa\\oisst-avhrr-v02r01.20250107.nc",
+    "sha256": "3b2067415660d3d88e4d3350620cdb2448f9cd3721e4c3ab92c4677021f5e230",
+    "status": "downloaded"
+  }
+]

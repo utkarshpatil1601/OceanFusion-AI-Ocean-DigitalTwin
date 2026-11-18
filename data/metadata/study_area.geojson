@@ -1,0 +1,20 @@
+{
+  "type": "Feature",
+  "properties": {
+    "name": "Arabian Sea and western Indian coastline",
+    "version": "1.0",
+    "description": "Initial MVP study area. This broad polygon is used for discovery downloads; validate coastline and EEZ boundaries before scientific publication."
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [[
+      [50.0, 5.0],
+      [78.0, 5.0],
+      [78.0, 24.5],
+      [68.0, 26.0],
+      [60.0, 25.0],
+      [50.0, 20.0],
+      [50.0, 5.0]
+    ]]
+  }
+}

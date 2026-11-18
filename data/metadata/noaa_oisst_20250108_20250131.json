@@ -1,0 +1,165 @@
+[
+  {
+    "date": "2025-01-08",
+    "url": "https://www.ncei.noaa.gov/data/sea-surface-temperature-optimum-interpolation/v2.1/access/avhrr/202501/oisst-avhrr-v02r01.20250108.nc",
+    "file": "data\\raw\\noaa\\oisst-avhrr-v02r01.20250108.nc",
+    "status": "exists"
+  },
+  {
+    "date": "2025-01-09",
+    "url": "https://www.ncei.noaa.gov/data/sea-surface-temperature-optimum-interpolation/v2.1/access/avhrr/202501/oisst-avhrr-v02r01.20250109.nc",
+    "file": "data\\raw\\noaa\\oisst-avhrr-v02r01.20250109.nc",
+    "status": "exists"
+  },
+  {
+    "date": "2025-01-10",
+    "url": "https://www.ncei.noaa.gov/data/sea-surface-temperature-optimum-interpolation/v2.1/access/avhrr/202501/oisst-avhrr-v02r01.20250110.nc",
+    "file": "data\\raw\\noaa\\oisst-avhrr-v02r01.20250110.nc",
+    "status": "exists"
+  },
+  {
+    "date": "2025-01-11",
+    "url": "https://www.ncei.noaa.gov/data/sea-surface-temperature-optimum-interpolation/v2.1/access/avhrr/202501/oisst-avhrr-v02r01.20250111.nc",
+    "file": "data\\raw\\noaa\\oisst-avhrr-v02r01.20250111.nc",
+    "status": "exists"
+  },
+  {
+    "date": "2025-01-12",
+    "url": "https://www.ncei.noaa.gov/data/sea-surface-temperature-optimum-interpolation/v2.1/access/avhrr/202501/oisst-avhrr-v02r01.20250112.nc",
+    "file": "data\\raw\\noaa\\oisst-avhrr-v02r01.20250112.nc",
+    "status": "exists"
+  },
+  {
+    "date": "2025-01-13",
+    "url": "https://www.ncei.noaa.gov/data/sea-surface-temperature-optimum-interpolation/v2.1/access/avhrr/202501/oisst-avhrr-v02r01.20250113.nc",
+    "file": "data\\raw\\noaa\\oisst-avhrr-v02r01.20250113.nc",
+    "sha256": "1d1eb7adc32122317f2c8ad0cf93273d71c45a3a0d6f606e26ad5aaec9d80241",
+    "status": "downloaded"
+  },
+  {
+    "date": "2025-01-14",
+    "url": "https://www.ncei.noaa.gov/data/sea-surface-temperature-optimum-interpolation/v2.1/access/avhrr/202501/oisst-avhrr-v02r01.20250114.nc",
+    "file": "data\\raw\\noaa\\oisst-avhrr-v02r01.20250114.nc",
+    "sha256": "b83a271bda7c3e67d484f715bf33198b4e84f3cc2e262c3290cf8878cbbdf917",
+    "status": "downloaded"
+  },
+  {
+    "date": "2025-01-15",
+    "url": "https://www.ncei.noaa.gov/data/sea-surface-temperature-optimum-interpolation/v2.1/access/avhrr/202501/oisst-avhrr-v02r01.20250115.nc",
+    "file": "data\\raw\\noaa\\oisst-avhrr-v02r01.20250115.nc",
+    "sha256": "fa3bc5efbb86fe3b46bfb08a6e2f5add88756185321a5f2720b93836079fa179",
+    "status": "downloaded"
+  },
+  {
+    "date": "2025-01-16",
+    "url": "https://www.ncei.noaa.gov/data/sea-surface-temperature-optimum-interpolation/v2.1/access/avhrr/202501/oisst-avhrr-v02r01.20250116.nc",
+    "file": "data\\raw\\noaa\\oisst-avhrr-v02r01.20250116.nc",
+    "sha256": "23e50d757ded4261ecd1158032c97f9f5edaa64735cd4fb27022fbbb94eec2a8",
+    "status": "downloaded"
+  },
+  {
+    "date": "2025-01-17",
+    "url": "https://www.ncei.noaa.gov/data/sea-surface-temperature-optimum-interpolation/v2.1/access/avhrr/202501/oisst-avhrr-v02r01.20250117.nc",
+    "file": "data\\raw\\noaa\\oisst-avhrr-v02r01.20250117.nc",
+    "sha256": "24ca903355ca96f0cd3f888e6c198dd5e14292e7ed7d5f8f88db402af9706d2b",
+    "status": "downloaded"
+  },
+  {
+    "date": "2025-01-18",
+    "url": "https://www.ncei.noaa.gov/data/sea-surface-temperature-optimum-interpolation/v2.1/access/avhrr/202501/oisst-avhrr-v02r01.20250118.nc",
+    "file": "data\\raw\\noaa\\oisst-avhrr-v02r01.20250118.nc",
+    "sha256": "eb18ee727fc5aec44f1189783a553e31ce34c60116b7dc02eac51148c2930771",
+    "status": "downloaded"
+  },
+  {
+    "date": "2025-01-19",
+    "url": "https://www.ncei.noaa.gov/data/sea-surface-temperature-optimum-interpolation/v2.1/access/avhrr/202501/oisst-avhrr-v02r01.20250119.nc",
+    "file": "data\\raw\\noaa\\oisst-avhrr-v02r01.20250119.nc",
+    "sha256": "e807667597a33b88271ce0306663b21fae0d7acb6807618fdf960648749df2a2",
+    "status": "downloaded"
+  },
+  {
+    "date": "2025-01-20",
+    "url": "https://www.ncei.noaa.gov/data/sea-surface-temperature-optimum-interpolation/v2.1/access/avhrr/202501/oisst-avhrr-v02r01.20250120.nc",
+    "file": "data\\raw\\noaa\\oisst-avhrr-v02r01.20250120.nc",
+    "sha256": "fb6c18691a4e8ad1a934b6134a63b3cf17032d1b3a983b354117b2d1eeef5c31",
+    "status": "downloaded"
+  },
+  {
+    "date": "2025-01-21",
+    "url": "https://www.ncei.noaa.gov/data/sea-surface-temperature-optimum-interpolation/v2.1/access/avhrr/202501/oisst-avhrr-v02r01.20250121.nc",
+    "file": "data\\raw\\noaa\\oisst-avhrr-v02r01.20250121.nc",
+    "sha256": "54bddde842bee0b4bbdc790cb97f43f0f634f55fe1e54858a04b11afc36c9802",
+    "status": "downloaded"
+  },
+  {
+    "date": "2025-01-22",
+    "url": "https://www.ncei.noaa.gov/data/sea-surface-temperature-optimum-interpolation/v2.1/access/avhrr/202501/oisst-avhrr-v02r01.20250122.nc",
+    "file": "data\\raw\\noaa\\oisst-avhrr-v02r01.20250122.nc",
+    "sha256": "e9310881162a9b11d13198314cd4f8200aef23cec30952a30f210d19ed27c75a",
+    "status": "downloaded"
+  },
+  {
+    "date": "2025-01-23",
+    "url": "https://www.ncei.noaa.gov/data/sea-surface-temperature-optimum-interpolation/v2.1/access/avhrr/202501/oisst-avhrr-v02r01.20250123.nc",
+    "file": "data\\raw\\noaa\\oisst-avhrr-v02r01.20250123.nc",
+    "sha256": "bfa84acd4d357e70c2d4b3c303373f5f32b63556d47fbf9d3cf625e6a3cfa660",
+    "status": "downloaded"
+  },
+  {
+    "date": "2025-01-24",
+    "url": "https://www.ncei.noaa.gov/data/sea-surface-temperature-optimum-interpolation/v2.1/access/avhrr/202501/oisst-avhrr-v02r01.20250124.nc",
+    "file": "data\\raw\\noaa\\oisst-avhrr-v02r01.20250124.nc",
+    "sha256": "3184f10ecdcc446a872f0290255ff75043ebeda74049b2d6fc08790a8f82129b",
+    "status": "downloaded"
+  },
+  {
+    "date": "2025-01-25",
+    "url": "https://www.ncei.noaa.gov/data/sea-surface-temperature-optimum-interpolation/v2.1/access/avhrr/202501/oisst-avhrr-v02r01.20250125.nc",
+    "file": "data\\raw\\noaa\\oisst-avhrr-v02r01.20250125.nc",
+    "sha256": "3d4c839c1eff7abaebbc9605f363457a3a85632c9a6b5797835b4c7b98fe7af9",
+    "status": "downloaded"
+  },
+  {
+    "date": "2025-01-26",
+    "url": "https://www.ncei.noaa.gov/data/sea-surface-temperature-optimum-interpolation/v2.1/access/avhrr/202501/oisst-avhrr-v02r01.20250126.nc",
+    "file": "data\\raw\\noaa\\oisst-avhrr-v02r01.20250126.nc",
+    "sha256": "61ba7ab77c806c5143b0e20e67e7ada9913db9c389cd0aae45b4d3ea11482a17",
+    "status": "downloaded"
+  },
+  {
+    "date": "2025-01-27",
+    "url": "https://www.ncei.noaa.gov/data/sea-surface-temperature-optimum-interpolation/v2.1/access/avhrr/202501/oisst-avhrr-v02r01.20250127.nc",
+    "file": "data\\raw\\noaa\\oisst-avhrr-v02r01.20250127.nc",
+    "sha256": "39a180f0af4ebf7d7a6d5e59fc2cdcbd193f85c09d936308efd27207e42f016c",
+    "status": "downloaded"
+  },
+  {
+    "date": "2025-01-28",
+    "url": "https://www.ncei.noaa.gov/data/sea-surface-temperature-optimum-interpolation/v2.1/access/avhrr/202501/oisst-avhrr-v02r01.20250128.nc",
+    "file": "data\\raw\\noaa\\oisst-avhrr-v02r01.20250128.nc",
+    "sha256": "e8f5e2d5ca752c7504a32b6e9fee2a75bcafe7e3a665ae89d7a6d7f52ccfcbf3",
+    "status": "downloaded"
+  },
+  {
+    "date": "2025-01-29",
+    "url": "https://www.ncei.noaa.gov/data/sea-surface-temperature-optimum-interpolation/v2.1/access/avhrr/202501/oisst-avhrr-v02r01.20250129.nc",
+    "file": "data\\raw\\noaa\\oisst-avhrr-v02r01.20250129.nc",
+    "sha256": "b8796d61fc577d88dd7dd0976b0d6bc935a3377f2d4eb8ec4240ab6b1520d2ea",
+    "status": "downloaded"
+  },
+  {
+    "date": "2025-01-30",
+    "url": "https://www.ncei.noaa.gov/data/sea-surface-temperature-optimum-interpolation/v2.1/access/avhrr/202501/oisst-avhrr-v02r01.20250130.nc",
+    "file": "data\\raw\\noaa\\oisst-avhrr-v02r01.20250130.nc",
+    "sha256": "b51230e590c379c0fca4e9bb4b0817784a650b6a24eec27e1a8e3723c893a05b",
+    "status": "downloaded"
+  },
+  {
+    "date": "2025-01-31",
+    "url": "https://www.ncei.noaa.gov/data/sea-surface-temperature-optimum-interpolation/v2.1/access/avhrr/202501/oisst-avhrr-v02r01.20250131.nc",
+    "file": "data\\raw\\noaa\\oisst-avhrr-v02r01.20250131.nc",
+    "sha256": "e71ad35b3dcacfdf778c70a21a3772fbf581224c2398c7a4ecb48e3f2ae96f0d",
+    "status": "downloaded"
+  }
+]
