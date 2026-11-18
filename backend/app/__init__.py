@@ -19,12 +19,18 @@ def create_app(test_config=None):
         Path(__file__).resolve().parents[2] / "data" / "oceanfusion.sqlite"
     )
     database_url = os.getenv("DATABASE_URL")
+    is_postgres = bool(
+        database_url
+        and database_url.startswith(("postgres://", "postgresql://", "postgresql+"))
+    )
     app.config.from_mapping(
         SECRET_KEY=os.getenv("SECRET_KEY", "development-only"),
         SQLALCHEMY_DATABASE_URI=database_url or f"sqlite:///{default_database}",
         SQLALCHEMY_TRACK_MODIFICATIONS=False,
         SQLALCHEMY_ENGINE_OPTIONS={
-            "connect_args": {"timeout": 30.0},
+            "connect_args": (
+                {"connect_timeout": 30} if is_postgres else {"timeout": 30.0}
+            ),
         },
     )
     if test_config:
