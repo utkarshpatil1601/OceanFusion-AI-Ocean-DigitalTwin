@@ -11,7 +11,7 @@ services:
         value: 3.13.5
       - key: DATABASE_URL
         fromDatabase:
-          name: oceanfusion-db
+          name: oceanfusion-db-oregon
           property: connectionString
       - key: SECRET_KEY
         generateValue: true
@@ -33,7 +33,7 @@ services:
         sync: false
 
 databases:
-  - name: oceanfusion-db
+  - name: oceanfusion-db-oregon
     plan: free
-    region: singapore
+    region: oregon
     postgresMajorVersion: "16"

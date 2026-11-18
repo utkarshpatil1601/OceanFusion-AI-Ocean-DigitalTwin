@@ -63,7 +63,8 @@ The API health check is available at `http://localhost:5000/api/health`.
 ### Deploy to Render
 
 The repository includes `render.yaml`, which defines a Render static frontend,
-Flask API, and PostgreSQL database in Singapore. The Flask runtime is pinned to
+Flask API, and PostgreSQL database in Oregon, matching the API region so they can
+communicate over Render's private network. The Flask runtime is pinned to
 Python 3.13.5 because the saved TensorFlow 2.20 forecast models do not support
 Python 3.14. The Blueprint uses Render's free API and database plans for a
 temporary demo deployment.
